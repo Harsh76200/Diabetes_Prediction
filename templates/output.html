@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Logistic Regression</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../static/index.css" />
+  </head>
+  <body>
+    <form action="/" method="post">
+      <h1>Diabetes: <span class="{{output}}">{{output}}</span></h1>
+      <hr />
+      <h3>For the following input values : </h3>
+      <div>
+        <span>Pregnancies value: {{request.form['pregnancies']}}</span>
+        <br />
+        <span>Glucose value: {{request.form['glucose']}}</span>
+        <br />
+        <span>Bp value: {{request.form['bp']}}</span>
+        <br />
+        <span>Skin Thickness value: {{request.form['skinthickness']}}</span>
+        <br />
+        <span>Insulin value: {{request.form['insulin']}}</span>
+        <br />
+        <span>BMI value: {{request.form['bmi']}}</span>
+        <br />
+        <span>Diabetes Pedigree Function value: {{request.form['diabetespedigreefunction']}}</span>
+        <br />
+        <span>Age value: {{request.form['age']}}</span>
+      </div>
+    </form>
+  </body>
+</html>
